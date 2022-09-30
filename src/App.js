@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import './index.css';
 
 import CountryForm from './CountryForm';
+
+import NavBar from './NavBar';
 
 const App = () => {
   const [countrys, setCountrys] = useState([]);
@@ -29,6 +32,7 @@ const App = () => {
 
   return (
     <>
+    <NavBar />
     <div>
       <input type='text' placeholder='Search' onChange={handleSearch} />
     </div>
